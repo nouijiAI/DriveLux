@@ -1,39 +1,33 @@
-# 🚗 DriveLux
+🚗 DriveLux
 
-A modern and responsive car rental website built with HTML, CSS and JavaScript.
+A modern and responsive car rental website designed to provide customers with a simple and convenient way to explore rental cars and contact the rental agency.
 
-## 🌐 Project
+✨ Features
 
-DriveLux is a professional car rental website designed to present available vehicles and provide customers with an easy way to contact the rental agency.
+- 🚘 Car rental showcase
+- 📱 Responsive design
+- 🎨 Modern user interface
+- 📅 Booking section
+- 📞 Contact section
+- 💬 WhatsApp contact
+- 🌐 Fully deployed online
 
-## ✨ Features
-
-- Responsive design
-- Modern dark interface
-- Car rental presentation
-- Booking section
-- Contact section
-- WhatsApp contact
-- Mobile-friendly layout
-
-## 🛠️ Technologies
+🛠️ Technologies
 
 - HTML5
 - CSS3
 - JavaScript
 
-## 📱 Responsive
+🌐 Live Demo
 
-The website is designed to work on:
+"DriveLux" (https://drivlux.netlify.app)
 
-- Desktop
-- Tablet
-- Mobile
+📸 Project
 
-## 👨‍💻 Author
+DriveLux is a frontend web project created to demonstrate a professional car rental website.
 
-NouijiAI
+👨‍💻 Author
 
----
+nouijiAI
 
-This project was created as a portfolio project.
+Built with HTML, CSS and JavaScript.
