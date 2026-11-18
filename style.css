@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gold: #d6ad60;
+    --dark: #101010;
+    --gray: #a5a5a5;
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101010;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: #101010;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span,
+.hero h1 span,
+.section-heading h2 span,
+.about-section h2 span {
+    color: var(--gold);
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: #ccc;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.navbar nav a:hover {
+    color: var(--gold);
+}
+
+.nav-btn {
+    border: 1px solid var(--gold);
+    padding: 12px 20px;
+    color: var(--gold);
+    font-size: 13px;
+    transition: .3s;
+}
+
+.nav-btn:hover {
+    background: var(--gold);
+    color: #111;
+}
+
+.hero {
+    min-height: 620px;
+    padding: 120px 8% 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,.25)),
+        url("g\ class.jpg")
+        center/cover;
+}
+
+.eyebrow {
+    color: var(--gold);
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero-description {
+    color: #ccc;
+    max-width: 450px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 15px 24px;
+    border: 1px solid var(--gold);
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: #111;
+}
+
+.btn-primary:hover {
+    background: #f0ca7e;
+}
+
+.btn-secondary {
+    color: white;
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #111;
+}
+
+.hero-bottom {
+    display: flex;
+    gap: 35px;
+    color: #ddd;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.cars-section {
+    padding: 100px 8%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.section-heading h2,
+.about-section h2,
+.booking-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 43px);
+}
+
+.section-heading > p {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.filter {
+    padding: 10px 22px;
+    border: 1px solid #393939;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.filter.active,
+.filter:hover {
+    background: var(--gold);
+    color: #111;
+    border-color: var(--gold);
+}
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.car-card {
+    background: #191919;
+    border: 1px solid #292929;
+    transition: .3s;
+}
+
+.car-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--gold);
+}
+
+.car-image {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.car-card:hover img {
+    transform: scale(1.06);
+}
+
+.car-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--gold);
+    color: #111;
+    padding: 7px 12px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.car-info {
+    padding: 22px;
+}
+
+.car-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+}
+
+.car-details {
+    color: var(--gray);
+    font-size: 12px;
+    margin: 12px 0 22px;
+}
+
+.car-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.car-footer strong {
+    color: var(--gold);
+    font-size: 20px;
+}
+
+.book-btn {
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background: var(--gold);
+    color: #111;
+}
+
+.about-section {
+    padding: 85px 8%;
+    background: #191919;
+}
+
+.about-section h2 {
+    max-width: 650px;
+    line-height: 1.4;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.feature {
+    border-top: 1px solid #444;
+    padding-top: 25px;
+}
+
+.feature h3 {
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.feature p {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.booking-section {
+    padding: 90px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.booking-text p:last-child {
+    color: var(--gray);
+    margin-top: 20px;
+}
+
+#bookingForm {
+    display: grid;
+    gap: 15px;
+}
+
+#bookingForm input,
+#bookingForm select {
+    padding: 16px;
+    background: #191919;
+    border: 1px solid #383838;
+    color: white;
+    outline: none;
+    font-family: inherit;
+}
+
+#bookingForm input:focus,
+#bookingForm select:focus {
+    border-color: var(--gold);
+}
+
+#bookingForm button {
+    border: none;
+}
+
+footer {
+    width:100% ;
+    margin: 0;
+    padding: 45px 0;
+    background: #191919;
+    text-align: center;
+}
+
+footer p {
+    color: var(--gray);
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+.copyright {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .navbar nav {
+        gap: 13px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .cars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 540px;
+        padding: 90px 6% 30px;
+    }
+
+    .hero-bottom {
+        gap: 15px;
+        font-size: 9px;
+    }
+
+    .cars-section,
+    .about-section,
+    .booking-section {
+        padding: 65px 6%;
+    }
+
+    .section-heading {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .cars-grid,
+    .features,
+    .booking-section {
+        grid-template-columns: 1fr;
+    }
+
+    .car-image {
+        height: 210px;
+    }
+}
+/* Premium improvements */
+
+.car-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform .35s, border-color .35s;
+}
+
+.car-image {
+    height: 240px;
+}
+
+.car-image img {
+    transition: transform .5s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+    border-color: #d6ad60;
+}
+
+#bookingForm {
+    background: #191919;
+    padding: 30px;
+    border: 1px solid #393939;
+    border-radius: 12px;
+}
+
+#bookingForm input,
+#bookingForm select {
+    width: 100%;
+    border-radius: 6px;
+    min-height: 48px;
+}
+
+#bookingForm label {
+    color: #d6ad60;
+    font-size: 13px;
+}
+
+.price-result {
+    padding: 18px;
+    background: #242424;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-result strong {
+    color: #d6ad60;
+    font-size: 22px;
+}
+
+button, a {
+    transition: .3s ease;
+}
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* General */
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Booking */
+    .booking-form {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Cars */
+    .cars-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* About */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+
+    /* Buttons */
+    .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveLux | Location de Voitures</title>
+    <meta name="description" content="Découvrez notre sélection de voitures et demandez votre réservation avec DriveLux.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="logo">DRIVE<span>LUX</span></a>
+
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="#cars">Nos voitures</a>
+            <a href="#about">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#booking" class="nav-btn">Réserver maintenant</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">LOCATION DE VOITURES PREMIUM</p>
+
+            <h1>Conduisez votre<br>
+                <span>prochaine expérience.</span>
+            </h1>
+
+            <p class="hero-description">
+                Découvrez une sélection de véhicules élégants
+                pour tous vos déplacements.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#cars" class="btn-primary">Découvrir nos voitures</a>
+                <a href="#about" class="btn-secondary">En savoir plus</a>
+            </div>
+        </div>
+
+        <div class="hero-bottom">
+            <span>CONFORT</span>
+            <span>LIBERTÉ</span>
+            <span>ÉLÉGANCE</span>
+        </div>
+    </section>
+
+    <!-- CARS -->
+    <section class="cars-section" id="cars">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">NOTRE COLLECTION</p>
+                <h2>Nos voitures <span>disponibles</span></h2>
+            </div>
+
+            <p>Choisissez le véhicule qui correspond à votre voyage.</p>
+        </div>
+
+        <div class="filters">
+            <button class="filter active" data-filter="all">Toutes</button>
+            <button class="filter" data-filter="economique">Économiques</button>
+            <button class="filter" data-filter="berline">Berlines</button>
+            <button class="filter" data-filter="suv">SUV</button>
+        </div>
+
+        <div class="cars-grid">
+
+            <article class="car-card" data-category="economique">
+                <div class="car-image">
+                    <img src="golf 8.jpg" alt="Voiture économique">
+                    <span class="car-tag">ÉCONOMIQUE</span>
+                </div>
+                <div class="car-info">
+                    <h3>Volkswagen Polo</h3>
+                    <p class="car-details">Manuelle · 5 places · Essence</p>
+                    <div class="car-footer">
+                        <p><strong>110 DT</strong> / jour</p>
+                        <button class="book-btn" data-car="Volkswagen Polo">Réserver</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="car-card" data-category="berline">
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=85" alt="BMW berline">
+                    <span class="car-tag">BERLINE</span>
+                </div>
+                <div class="car-info">
+                    <h3>BMW Série 3</h3>
+                    <p class="car-details">Automatique · 5 places · Diesel</p>
+                    <div class="car-footer">
+                        <p><strong>280 DT</strong> / jour</p>
+                        <button class="book-btn" data-car="BMW Série 3">Réserver</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="car-card" data-category="suv">
+                <div class="car-image">
+                    <img src="rang.jpg" alt="SUV">
+                    <span class="car-tag">SUV</span>
+                </div>
+                <div class="car-info">
+                    <h3>Range Rover</h3>
+                    <p class="car-details">Automatique · 5 places · Diesel</p>
+                    <div class="car-footer">
+                        <p><strong>250 DT</strong> / jour</p>
+                        <button class="book-btn" data-car="Range Rover">Réserver</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div>
+            <p class="eyebrow">POURQUOI NOUS CHOISIR ?</p>
+            <h2>Votre voyage commence avec <span>DriveLux.</span></h2>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>01. Qualité</h3>
+                <p>Des véhicules soigneusement sélectionnés.</p>
+            </div>
+            <div class="feature">
+                <h3>02. Simplicité</h3>
+                <p>Une demande de réservation simple et rapide.</p>
+            </div>
+            <div class="feature">
+                <h3>03. Confort</h3>
+                <p>Une expérience pensée pour vos déplacements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking-section" id="booking">
+        <div class="booking-text">
+            <p class="eyebrow">RÉSERVATION</p>
+            <h2>Prêt à prendre la route ?</h2>
+            <p>Envoyez-nous votre demande de réservation.</p>
+        </div>
+        <form id="bookingForm">
+
+    <input type="text" id="customerName"
+        placeholder="Votre nom complet" required>
+
+    <input type="tel" id="customerPhone"
+        placeholder="Votre téléphone" required>
+
+    <select id="carChoice" required>
+        <option value="">Choisir une voiture</option>
+        <option value="Volkswagen Polo">Volkswagen golf 8</option>
+        <option value="BMW Série 3">BMW Série 3</option>
+        <option value="Range Rover">Range Rover</option>
+    </select>
+
+    <label for="pickupDate">Date de départ</label>
+    <input type="date" id="pickupDate" required>
+
+    <label for="returnDate">Date de retour</label>
+    <input type="date" id="returnDate" required>
+
+    <div class="price-result">
+        Prix estimé :
+        <strong id="totalPrice">0 DT</strong>
+    </div>
+
+    <button type="submit" class="btn-primary">
+        Réserver sur WhatsApp
+    </button>
+
+</form>
+
+        
+    <!-- CONTACT -->
+    <footer id="contact">
+        <a href="#" class="logo">DRIVE<span>LUX</span></a>
+        <p>Votre mobilité, notre priorité.</p>
+        <p class="copyright">© 2026 DriveLux.yassinenouiji177@gmail.com.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
